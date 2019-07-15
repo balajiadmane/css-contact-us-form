@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        .cu-form-container{
+            width:100%;
+            margin:4%;
+        }
+        .cu-form-container .cu-form-group{
+            display: grid;
+            width: 100%;
+            margin:10px;
+        }
+        .cu-form-container input , textarea{
+            padding:10px;
+            border:1px solid rgb(189, 189, 189);
+            border-radius: 3px;
+        }
+        .cu-form-container label{
+                margin-bottom: 10px;
+                font-size: 18px;
+        }
+        .cu-form-container #form{
+            margin-left:29%;
+            margin-right:39%;
+            padding-left: 1%;
+            border: 1px solid #c5c0c0;
+            padding-right: 3%;
+            padding-top: 3%;
+        }
+        .cu-form-container button{
+            padding: 2%;
+            font-size: 18px;
+            color: white;
+            background-color: #4cd24c;
+            border: 1px solid #4cd24c;
+            border-radius: 3px;
+        }
+        .cu-form-container h3{
+            width: 100%;
+            text-align: center;
+            font-size: 22px;
+            border-bottom: 5px solid green;
+            color: green;
+            margin-left: 3%;
+        }
+
+        @media only screen and (max-width:768px){
+                .cu-form-container form {
+                    margin-left:0px;
+                    margin-right: 5%;
+                }
+        }
+    </style>
+
+    <script>
+    document.getElementById("#cont").addEventListener("click",()=>{
+        console.log("test")
+    })
+    </script>
+</head>
+<body>
+    
+
+    <div class="cu-form-container">
+        <div id="form">
+            <!-- <form> -->
+            <h3>Contact Us</h3>
+            <div class="cu-form-group">
+                <label for="">Enter name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="cu-form-group">
+                <label for="">Enter contact:</label>
+                <input type="text" name="cont" id="cont">
+            </div>
+            <div class="cu-form-group">
+                <label for="">Enter message:</label>
+                <textarea></textarea>
+            </div>
+
+           <div class="cu-form-group">
+                <button id="submitForm"> Submit</button>
+           </div>
+           </div>
+
+        
+        <!-- </form> -->
+    </div>
+</body>
+</html>
